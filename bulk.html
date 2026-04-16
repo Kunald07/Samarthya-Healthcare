@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulk Supplies | Samarthya Healthcare</title>
+  <style>
+    body {
+      margin:0; font-family:"Segoe UI", Arial, sans-serif;
+      background:#f9f9f9; color:#222;
+    }
+
+    /* Hero Section */
+    .bulk-hero {
+      background: url('images/aayurvedic.png') center/cover no-repeat;
+      height: 70vh;
+      display:flex; align-items:center; justify-content:center;
+      position:relative; text-align:center; color:white;
+    }
+    .bulk-hero::after {
+      content:""; position:absolute; inset:0;
+      background:rgba(0,0,0,0.55);
+    }
+    .bulk-hero-content {
+      position:relative; z-index:2; max-width:800px; padding:1rem;
+    }
+    .bulk-hero h1 {
+      font-size:2.8rem; margin-bottom:1rem;
+      text-transform:uppercase; letter-spacing:2px;
+    }
+    .bulk-hero p { font-size:1.2rem; line-height:1.6; }
+
+    /* Highlights */
+    .highlights {
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px; padding:3rem 1.5rem; max-width:1200px; margin:auto;
+    }
+    .highlight {
+      background:white; padding:2rem; border-radius:12px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+      text-align:center; transition:transform .3s;
+    }
+    .highlight:hover { transform:translateY(-5px); }
+    .highlight img { width:60px; margin-bottom:1rem; }
+    .highlight h3 { margin:0.5rem 0; }
+
+    /* Capacity Section */
+    .capacity {
+      background:#fff;
+      padding:3rem 1.5rem; text-align:center;
+    }
+    .capacity h2 {
+      font-size:2rem; margin-bottom:1rem; text-transform:uppercase;
+    }
+    .capacity p { max-width:800px; margin:auto; line-height:1.7; }
+
+    /* Gallery */
+    .gallery {
+      padding:3rem 1.5rem; max-width:1200px; margin:auto;
+    }
+    .gallery h2 { text-align:center; margin-bottom:2rem; font-size:2rem; }
+    .gallery-grid {
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:15px;
+    }
+    .gallery-grid img {
+      width:100%; height:250px; object-fit:cover;
+      border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:transform .3s;
+    }
+    .gallery-grid img:hover { transform:scale(1.05); }
+
+    /* Call To Action */
+    .cta {
+      background:linear-gradient(135deg,#aef1f1,#0f9d58);
+      color:white; text-align:center; padding:3rem 1.5rem;
+    }
+    .cta h2 { font-size:2rem; margin-bottom:1rem; }
+    .cta p { margin-bottom:2rem; font-size:1.1rem; }
+    .cta a {
+      background:white; color:#0a8754;
+      padding:0.8rem 1.5rem; border-radius:8px;
+      text-decoration:none; font-weight:bold; transition:0.3s;
+    }
+    .cta a:hover { background:#f1f1f1; }
+
+    /* Responsive */
+    @media (max-width:600px) {
+      .bulk-hero h1 { font-size:2rem; }
+      .bulk-hero p { font-size:1rem; }
+    }
+
+        /* Certifications Auto-scroll */
+        .certifications {
+          background: #fff;
+          padding: 60px 0;
+          overflow: hidden;
+          position: relative;
+        }
+    
+        .certifications h2 {
+          color: #00695c;
+          margin-bottom: 30px;
+        }
+    
+        .logo-slider {
+          display: flex;
+          width: calc(250px * 10);
+          animation: scroll 20s linear infinite;
+        }
+    
+        .logo-slider img {
+          width: 200px;
+          height: 100px;
+          object-fit: contain;
+          margin: 0 30px;
+          transition: filter 0.3s;
+        }
+    
+        .logo-slider img:hover {
+          filter: grayscale(0%);
+        }
+    
+        @keyframes scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+    
+    
+
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="bulk-hero">
+    <div class="bulk-hero-content">
+      <h1>Bulk Supplies</h1>
+      <p>High Quality Fine Powdered Raw Materials for Tablet and Capsule Manufacturers </p>
+    </div>
+  </section>
+
+
+
+
+<!-- Bulk Production Section -->
+<section class="bulk-section" id="bulk-production">
+  <div class="bulk-wrapper">
+    <!-- Image -->
+    <div class="bulk-img">
+      <img src="images/bg4.jpg" alt="Hammer Mill Machine">
+    </div>
+
+    <!-- Text -->
+    <div class="bulk-text">
+      <h2>Bulk Production in Action</h2>
+      <p>
+        Are you seeking the ultimate solution for achieving exceptional fine powders with
+        unparalleled efficiency? Look no further! Our state-of-the-art pulverizer machine
+        is engineered to revolutionize your bulk herbal processing.
+      </p>
+      <p>
+        At the heart of this powerhouse is a robust Hammer Mill,
+        meticulously designed to deliver superior grinding performance. This isn’t just
+        a mill; it’s a marvel of efficiency.
+      </p>
+      <p>
+        Capable of processing up to 2.0 tons of material per day,
+        imagine the consistency, the quality, and the sheer volume you can achieve!
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+.bulk-section {
+  padding: 70px 8%;
+  background: #fafafa;
+  font-family: "Poppins", sans-serif;
+}
+
+.bulk-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.bulk-img {
+  flex: 1;
+  text-align: center;
+}
+
+.bulk-img img {
+  max-width: 100%;
+  border-radius: 14px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.bulk-img img:hover {
+  transform: scale(1.05);
+}
+
+.bulk-text {
+  flex: 1;
+}
+
+.bulk-text h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #2c3e50;
+  position: relative;
+}
+
+.bulk-text h2::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: #27ae60;
+  border-radius: 2px;
+}
+
+.bulk-text p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.highlight {
+  font-weight: 600;
+  color: #27ae60;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .bulk-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bulk-text {
+    margin-top: 20px;
+  }
+
+  .bulk-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .bulk-text p {
+    font-size: 1rem;
+  }
+}
+</style>
+
+  
+  <!-- Highlights -->
+  <section class="highlights">
+    <div class="highlight">
+      <img src="images/certified.png"/>
+      <h3>Certified Quality</h3>
+      <p>All products meet stringent safety.</p>
+    </div>
+    <div class="highlight">
+      <img src="images/scale supply.png"/>
+      <h3>Large Scale Supply</h3>
+      <p>Capable of handling bulk requirements without compromising quality.</p>
+    </div>
+    <div class="highlight">
+      <img src="images/ayurvedic experties.png"/>
+      <h3>Ayurvedic Expertise</h3>
+      <p>Decades of experience in authentic herbal formulations.</p>
+    </div>
+    <div class="highlight">
+      <img src="images/trusted support.png"/>
+      <h3>Trusted Support</h3>
+      <p>Dedicated team for bulk orders, partnerships & delivery.</p>
+    </div>
+  </section>
+
+  <!-- Capacity -->
+  <section class="capacity">
+    <h2>Our Manufacturing Capacity</h2>
+    <p>Samarthya Healthcare’s state-of-the-art facility can produce bulk quantities of herbal powders, capsules, and oils with uncompromised quality. Whether you need small batches or large-scale production, we ensure timely delivery with GMP certified processes.</p>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <h2>Bulk Production in Action</h2>
+    <div class="gallery-grid">
+      <img src="images/bulk1.jpeg" alt="Lab">
+      <img src="images/aayurvedic.png" alt="Production">
+      <img src="images/bulk2.jpg" alt="Herbs">
+      <img src="images/bulk3.jpg" alt="Ayurveda">
+    </div>
+  </section>
+
+  
+    <!-- Certifications Auto-scroll Section -->
+    <section class="certifications">
+        <h2 style="text-align: center;">Our Certifications & Recognitions</h2>
+        <div class="logo-slider">
+          <img src="images/iso.jpg" alt="ISO 9001">
+          <img src="images/fda approved.jpg" alt="CE Certified">
+          <img src="images/100% herbal.jpg" alt="FDA Approved">
+          <img src="images/haccp.jpg" alt="WHO Compliant">
+          <img src="images/fsaai.jpg" alt="GMP Certified">
+          <!-- Repeat logos for smooth infinite effect -->
+          <img src="images/iso.jpg" alt="ISO 9001">
+          <img src="images/fda approved.jpg" alt="CE Certified">
+          <img src="images/100% herbal.jpg" alt="FDA Approved">
+          <img src="images/haccp.jpg" alt="WHO Compliant">
+          <img src="images/fsaai.jpg" alt="GMP Certified">
+        </div>
+      </section>
+    
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Partner With Us</h2>
+    <p>Looking for a reliable bulk supplier for Ayurvedic & herbal products? Let’s work together. <br>© 2025 Samarthya Healthcare | All Rights Reserved</p>
+    <a href="contact.html">Discuss Your Project</a>
+  </section>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samarthya Healthcare | Your Trusted Partner</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <style>
+    /* ---------------------------------
+       1. General & Utility Styles
+    --------------------------------- */
+    :root {
+      --primary-green: #0b693e; /* A deeper, more elegant green */
+      --secondary-dark: #2c3e50; /* A soft, professional charcoal */
+      --text-gray: #7f8c8d; /* A subtle gray for body text */
+      --bg-light: #d4f2fa; /* A very soft, clean background */
+      --white: #ffffff;
+      --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.05);
+      --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--secondary-dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------------------------------
+       2. Section Styling
+    --------------------------------- */
+    .section {
+      padding: 2rem 0;
+      text-align: center;
+    }
+    
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1.1rem;
+      color: var(--secondary-dark);
+    }
+
+    .section-title span {
+      color: var(--primary-green);
+    }
+    
+    .section-intro {
+      max-width: 800px;
+      margin: 0 auto 3rem;
+      font-size: 1.1rem;
+      color: var(--text-gray);
+    }
+
+    /* ---------------------------------
+       3. Simple Scrolling Marquee
+    --------------------------------- */
+    .scroll-font-section {
+      padding: 15px 0;
+      background-color: var(--white);
+      overflow: hidden;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .marquee-text {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee-scroll 40s linear infinite;
+    }
+
+    .font-item {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0 2rem;
+      color: var(--secondary-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    
+    @keyframes marquee-scroll {
+      from { transform: translateX(0%); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* ---------------------------------
+       4. About Section
+    --------------------------------- */
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .about-card {
+      background: var(--white);
+      padding: 2.5rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: var(--shadow-light);
+      transition: all 0.3s ease;
+      border-top: 5px solid var(--primary-green);
+    }
+
+    .about-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .about-card h3 {
+      font-size: 1.4rem;
+      color: var(--secondary-dark);
+      margin-top: 0;
+      margin-bottom: 0.8rem;
+    }
+
+    .about-card p {
+      font-size: 1rem;
+      color: var(--text-gray);
+    }
+    
+    /* New: About Features List */
+    .about-features-list {
+      margin-top: 4rem;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .about-features-list li {
+      background-color: var(--white);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      text-align: left;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--secondary-dark);
+      box-shadow: var(--shadow-light);
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+    
+    .about-features-list li:hover {
+        transform: scale(1.02);
+        box-shadow: var(--shadow-hover);
+    }
+
+    .about-features-list li i {
+        font-size: 1.5rem;
+        margin-right: 1.5rem;
+        min-width: 40px; /* Prevents text from jumping on smaller screens */
+        text-align: center;
+    }
+
+    .about-features-list li .fa-check-circle {
+        color: #27ae60; /* A clear green for success */
+    }
+
+    .about-features-list li .fa-times-circle {
+        color: #e74c3c; /* A clear red for caution */
+    }
+
+    /* ---------------------------------
+       5. Certified Section (Features)
+    --------------------------------- */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+    }
+
+    .feature-card {
+      text-align: center;
+    }
+
+    .icon-container {
+      width: 80px;
+      height: 80px;
+      background-color: var(--primary-green);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 1.5rem;
+      color: var(--white);
+      font-size: 2.5rem;
+      transition: transform 0.3s ease;
+    }
+    
+    .feature-card:hover .icon-container {
+      transform: scale(1.1);
+    }
+
+    .feature-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--secondary-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-description {
+      font-size: 1rem;
+      color: var(--text-gray);
+    }
+
+    /* ---------------------------------
+       6. Leadership Section
+    --------------------------------- */
+    .team-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .team-member {
+      text-align: center;
+      flex: 0 0 280px;
+    }
+
+    .team-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 1rem;
+      border: 5px solid var(--white);
+      transition: all 0.3s ease;
+    }
+
+    .team-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: filter 0.3s ease;
+    }
+
+    .team-member:hover .team-img {
+      transform: translateY(-8px);
+      border-color: var(--primary-green);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .team-member:hover .team-img img {
+      filter: grayscale(0%);
+    }
+
+    .team-name {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--secondary-dark);
+    }
+
+    .team-role {
+      font-size: 1rem;
+      color: var(--text-gray);
+    }
+
+    /* ---------------------------------
+       7. Reveal Animation & Responsiveness
+    --------------------------------- */
+    .hidden {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* You will also need to add these root variables if they aren't already in your code */
+:root {
+  --primary-green: #0a5e52;
+  --footer-bg: #133e49; /* Dark background for the footer */
+  --footer-text: #adb5bd; /* Light gray text for the footer */
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 4rem 0 1rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.footer-col h3 {
+    color: var(--white);
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-col p, .footer-col li, .footer-col a {
+    font-size: 0.95rem;
+    color: var(--footer-text);
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li a {
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: var(--primary-green);
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: var(--footer-text);
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-green);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #679fd3;
+}
+
+/* Note: Make sure you also have the Font Awesome library linked in your <head> section for the icons to appear. */
+  </style>
+</head>
+<body>
+
+
+    <footer class="footer">
+      <div class="container">
+          <div class="footer-grid">
+              <div class="footer-col">
+                  <h3>About</h3>
+                  <p>Samarthya Healthcare blends Ayurvedic wisdom with modern manufacturing to create pure, effective health products. A team of dedicated professionals uses their expertise to produce high-quality Ayurvedic powders, proprietary formulations, and herbal oils for holistic well-being.</p>
+                  <div class="social-icons">
+                      <a href="#"><i class="fab fa-facebook"></i></a>
+                      <a href="#"><i class="fab fa-whatsapp"></i></a>
+                  </div>
+              </div>
+              <div class="footer-col">
+                  <h3>Quick Linnks</h3>
+                  <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms Of Service</a></li>
+                    <li><a href="#">Credits</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                  <h3>Our Service</h3>
+                  <ul>
+                    <li><a href="#">Ayurvedic Products & Manufacturing</a></li>
+                    <li><a href="#">High-Quality Ayurvedic Powders (Churna)</a></li>
+                    <li><a href="#">Proprietary Formulations</a></li>
+                    <li><a href="#"></a>Herbal Oils</li>
+                    <li><a href="#"></a>Third-Party Manufacturing</li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h3>Free Consultation</h3>
+                  <p>Call Us: +91 8820662982</p>
+                  <p>Free consultation is available to help you find the right
+                    Ayurvedic products for your holistic well-being</p>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>Copyright © 2025 Samarthya Health Care | Powered By Samarthya Infotech</p>
+          </div>
+      </div>
+  </footer>
+  </section>
+
+  <script>
+    const hiddenEls = document.querySelectorAll('.hidden');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    hiddenEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
+
+</body>
+</html>
